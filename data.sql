@@ -8,7 +8,7 @@ CREATE TABLE companies (
     name text NOT NULL UNIQUE,
     description text
 );
-
+ 
 CREATE TABLE invoices (
     id serial PRIMARY KEY,
     comp_code text NOT NULL REFERENCES companies ON DELETE CASCADE,
